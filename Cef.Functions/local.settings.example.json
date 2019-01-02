@@ -1,7 +1,8 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=claritygeneral;AccountKey=fLDtkBsb7I9nd4Z5AcPQoCw/USFJMZUeqcSs3nuybRJL90PxOP1L+hvRbOXyaeVYTQ3zR8dkORE1PCataVyx4Q==",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=claritygeneral;AccountKey=fLDtkBsb7I9nd4Z5AcPQoCw/USFJMZUeqcSs3nuybRJL90PxOP1L+hvRbOXyaeVYTQ3zR8dkORE1PCataVyx4Q==", 
+    "myblobstorage_STORAGE": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=clarityblob;AccountKey=7S+711AbxfvYxvWpO6qAI6JorYuOHWsD/LIXkHwG/UqF9lYO6hjbGXELW9omJOxCDqX8UOTEOByZhnte5iba+w==",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
     "THUMBNAIL_CONTAINER_NAME": "thumbnails",
     "THUMBNAIL_WIDTH": "100",
