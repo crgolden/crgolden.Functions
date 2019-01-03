@@ -40,10 +40,9 @@ namespace Cef.Functions
 
         private static IImageEncoder GetEncoder(string extension)
         {
-            if (!Regex.IsMatch(
-                input: extension.Replace(".", ""),
-                pattern: "gif|png|jpe?g",
-                options: RegexOptions.IgnoreCase)) return null;
+            extension = extension.Replace(".", "");
+            var isSupported = Regex.IsMatch(extension, "gif|png|jpe?g", RegexOptions.IgnoreCase);
+            if (!isSupported) return null;
             switch (extension)
             {
                 case "png":
