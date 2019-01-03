@@ -67,9 +67,9 @@ namespace Cef.Functions
         {
             try
             {
-                if (input != null)
+                if (input != null && eventGridEvent.Data is JObject jObject)
                 {
-                    var createdEvent = ((JObject)eventGridEvent.Data).ToObject<StorageBlobCreatedEventData>();
+                    var createdEvent = jObject.ToObject<StorageBlobCreatedEventData>();
                     var extension = Path.GetExtension(createdEvent.Url);
                     var encoder = GetEncoder(extension);
 
