@@ -62,7 +62,7 @@ namespace Cef.Functions
         [FunctionName("Thumbnail")]
         public static async Task Run(
             [EventGridTrigger]EventGridEvent eventGridEvent,
-            [Blob("{data.url}", FileAccess.Read)] Stream input,
+            [Blob("{Data.url}", FileAccess.Read)] Stream input,
             ILogger log)
         {
             try
