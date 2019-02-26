@@ -7,7 +7,7 @@
 // Use for local testing:
 //   https://{ID}.ngrok.io/runtime/webhooks/EventGrid?functionName=Thumbnail
 
-namespace Cef.Functions
+namespace Clarity.Functions
 {
     using System;
     using System.IO;
